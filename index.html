@@ -105,12 +105,41 @@
       <section class="main-page__find-hotels">
         <h2 class="find-hotels__title">Заинтересовались?</h2>
         <p class="find-hotels__description">Укажите предполагаемые даты поездки и мы покажем Вам лучшие предложения гостиниц в Седоне</p>
+        <button class="find-hotels__button">поиск гостиницы в седоне</button>
+        <!--Кнопка открывает форму-->
+        <p class="main-page__map">
+          <!--Блок для карты-->
+          <img src="img/map.jpg" width="1200" height="593" alt="Карта гостиниц">
+        </p>
       </section>
 
-      <section class="main-page__map">
-        <!--Блок для карты-->
-      </section>
 
+      <!--форма поиска гостиницы, будет скрыта, появляется по нажатию кнопки "поиск гостиниц"-->
+      <section class="popup">
+        <form class="popup__form" action="#" method="post">
+          <div class="popup__group">
+            <label class="popup__label" for="arrival">Дата заезда:</label>
+            <input class="popup__field" type="text" name="arrival" id="arrival" placeholder="24 апреля 2017">
+          </div>
+          <div class="popup__group">
+            <label class="popup__label" for="departure">Дата выезда:</label>
+            <input class="popup__field" type="text" name="departure" id="departure" placeholder="4 июля 2017">
+          </div>
+          <div class="popup__group  popup__group--quantity">
+            <label class="popup__label" for="adult">Взрослые:</label>
+            <span class="popup__toggle  popup__toggle--minus"></span>
+            <input class="popup__field" type="text" name="adult" id="adult" placeholder="2">
+            <span class="popup__toggle  popup__toggle--plus"></span>
+          </div>
+          <div class="popup__group  popup__group--quantity">
+            <label class="popup__label" for="children">Дети:</label>
+            <span class="popup__toggle  popup__toggle--minus"></span>
+            <input class="popup__field" type="text" name="children" id="children" placeholder="0">
+            <span class="popup__toggle  popup__toggle--plus"></span>
+          </div>
+          <a class="popup__btn  btn  btn--primary" href="#">Найти</a>
+        </form>
+      </section>
     </main>
 
     <footer class="main-footer">
@@ -118,9 +147,9 @@
 
       <div class="main-footer__social">
         <ul class="social__items">
-          <li><a href="#" class="social__item social__item--tw">twitter</a></li>
-          <li><a href="#" class="social__item social__item--fb">facebook</a></li>
-          <li><a href="#" class="social__item social__item--yt">youtube</a></li>
+          <li><a href="#" class="social__item social__item--tw" aria-label="twitter"></a></li>
+          <li><a href="#" class="social__item social__item--fb" aria-label="facebook"></a></li>
+          <li><a href="#" class="social__item social__item--yt" aria-label="youtube"></a></li>
         </ul>
       </div>
 
