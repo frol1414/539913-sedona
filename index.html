@@ -2,7 +2,9 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="style.css">
+    <link href="css/normalize" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
     <title>HTML Academy: Седона</title>
   </head>
   <body>
@@ -39,7 +41,7 @@
           <div class="advantages__info">
             <h3>Настоящий городок</h3>
             <span class="advantages__number"> - №1 -</span>
-            <p class="advantages__description">Седона не атракцион для туристов, там течет своя жизнь</p>
+            <p class="advantages__description">Седона - не атракцион для туристов, там течет своя жизнь</p>
           </div>
           <div class="advantages__photo">
             <img src="img/realtown.jpg" alt="Настоящий городок" height="256" width="800">
@@ -107,7 +109,7 @@
         <p class="find-hotels__description">Укажите предполагаемые даты поездки и мы покажем Вам лучшие предложения гостиниц в Седоне</p>
         <button class="find-hotels__button">поиск гостиницы в седоне</button>
         <section class="popup">
-          <form class="popup__form" action="#" method="get">
+          <form class="popup__form" action="https://echo.htmlacademy.ru" method="get">
             <div class="popup__group">
               <label class="popup__label" for="arrival">Дата заезда:</label>
               <input class="popup__field" type="text" name="arrival" id="arrival" placeholder="24 апреля 2017">
@@ -118,17 +120,17 @@
             </div>
             <div class="popup__group  popup__group--quantity">
               <label class="popup__label" for="adult">Взрослые:</label>
-              <button class="popup__toggle  popup__toggle--minus"><span class="visually-hidden">Убрать</span></button>
+              <button type="button" class="popup__toggle  popup__toggle--minus"><span class="visually-hidden">Убрать</span></button>
               <input class="popup__field" type="text" name="adult" id="adult" placeholder="2">
-              <button class="popup__toggle  popup__toggle--plus"><span class="visually-hidden">Добавить</span></button>
+              <button type="button" class="popup__toggle  popup__toggle--plus"><span class="visually-hidden">Добавить</span></button>
             </div>
             <div class="popup__group  popup__group--quantity">
               <label class="popup__label" for="children">Дети:</label>
-              <button class="popup__toggle  popup__toggle--minus"><span class="visually-hidden">Убрать</span></button>
+              <button type="button" class="popup__toggle  popup__toggle--minus"><span class="visually-hidden">Убрать</span></button>
               <input class="popup__field" type="text" name="children" id="children" placeholder="0">
-              <button class="popup__toggle  popup__toggle--plus"><span class="visually-hidden">Добавить</span></button>
+              <button type="button" class="popup__toggle  popup__toggle--plus"><span class="visually-hidden">Добавить</span></button>
             </div>
-            <button class="popup__btn  btn  btn--primary" href="#">Найти</button>
+            <button type="submit" class="popup__btn" href="#">Найти</button>
           </form>
         </section>
         <p class="main-page__map">

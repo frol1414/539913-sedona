@@ -1,0 +1,181 @@
+body {
+  margin: 0;
+  padding: 0;
+
+  font-family: 'PT Sans', Arial, sans-serif;
+  font-size: 14px;
+  line-height: 26px;
+  color: #000000;
+  text-transform: uppercase;
+  font-weight: 700;
+  background-color: #ffffff;
+}
+
+a {
+  text-decoration: none;
+}
+
+.nav__list a{
+  color: #000000;
+}
+
+
+/*-------------------------------Header-------------------------------*/
+.nav__list a:hover,
+.nav__list a:focus {
+  color: #81b3d2;
+}
+.nav__list a:active {
+  color: #929292;
+}
+
+
+/*-------------------------------Main-page-------------------------------*/
+.main-page__header {
+  text-align: center;
+}
+
+.header__title {
+  font-family: 'PT Sans', Arial, sans-serif;
+  font-size: 21px;
+  line-height: 26px;
+  color: #000000;
+}
+
+.header__discription,
+.advantages__description,
+.item__description,
+.item-nextnumbers__description,
+.advantages__number,
+.item-nextnumbers__number,
+.find-hotels__description {
+  font-weight: 400;
+}
+
+.nav__list,
+.advantages__features {
+  list-style: none;
+}
+
+.advantages__info {
+  background-color: #81b3d2;
+  color: #ffffff;
+  text-align: center;
+}
+
+.advantages__photo {
+  background-color: #ffffff;
+}
+
+.advantages__features-item {
+  text-align: center;
+  color: #000000;
+}
+
+.item__title,
+.item-nextnumbers__title {
+  font-size: 21px;
+  line-height: 21px;
+  color: #000000;
+}
+
+.item-nextnumbers__info {
+  text-align: center;
+  color: #000000;
+}
+
+.find-hotels__title {
+  font-size: 30px;
+  line-height: 36px;
+  border: none;
+  text-align: center;
+  vertical-align: middle;
+}
+.find-hotels__button {
+  font: inherit;
+  background-color: #766357;
+  color: #ffffff;
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.find-hotels__description{
+  text-align: center;
+}
+.popup__btn {
+  background-color: #81b3d2;
+  color: #ffffff;
+  border: none;
+  text-align: center;
+  vertical-align: middle;
+}
+.main-page__map p {
+    background-color: #ffffff;
+}
+/*-------------------------------Catalog-------------------------------*/
+.results-center__sort {
+  list-style: none;
+}
+.main-page__filters {
+    color: #ffffff;
+    background-color: #455258;
+}
+.search__results-left {
+  font-size: 21px;
+  line-height: 26px;
+}
+.search__results-center span,
+.search__results-center a{
+  font-size: 12px;
+  line-height: 18px;
+  color: #000000;
+}
+.filters__title {
+  font-size: 16px;
+  line-height: 21px;
+}
+.type,
+.price,
+.rating-nubmers,
+.filters__column label {
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.link-title {
+  font-size: 21px;
+  line-height: 26px;
+}
+
+.link-title {
+  color: #000000;
+}
+
+.btn__more-info,
+.btn__book-it {
+  text-align: center;
+  color: #ffffff;
+}
+
+.btn__more-info {
+  background-color: #81b3d2;
+}
+
+.btn__book-it  {
+  background-color: #766357;
+}
+
+.link-title:hover,
+.link-title:focus {
+  color: #81b3d2;
+}
+.link-title:active {
+  color: #929292;
+}
+
+/*-------------------------------Footer-------------------------------*/
+.social__items {
+  list-style: none;
+}
