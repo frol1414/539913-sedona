@@ -19,16 +19,27 @@ a {
   color: #000000;
 }
 
+.visually-hidden {
+  font-size: 0;
+}
 
 /*-------------------------------Header-------------------------------*/
-.nav__list a:hover,
-.nav__list a:focus {
-  color: #81b3d2;
-}
-.nav__list a:active {
-  color: #929292;
+
+.nav__list a {
+  color:#000000;
 }
 
+.nav__list a:hover {
+  color: #81b3d2;
+}
+
+.nav__list a:focus {
+  color: #766357;
+}
+
+.nav__list a:active {
+  color: #9f9f9f;
+}
 
 /*-------------------------------Main-page-------------------------------*/
 .main-page__header {
@@ -42,13 +53,7 @@ a {
   color: #000000;
 }
 
-.header__discription,
-.advantages__description,
-.item__description,
-.item-nextnumbers__description,
-.advantages__number,
-.item-nextnumbers__number,
-.find-hotels__description {
+.header__discription {
   font-weight: 400;
 }
 
@@ -61,6 +66,11 @@ a {
   background-color: #81b3d2;
   color: #ffffff;
   text-align: center;
+}
+
+.advantages__description,
+.item__description {
+    font-weight: 400;
 }
 
 .advantages__photo {
@@ -84,6 +94,12 @@ a {
   color: #000000;
 }
 
+.item-nextnumbers__description,
+.advantages__number,
+.item-nextnumbers__number {
+  font-weight: 400;
+}
+
 .find-hotels__title {
   font-size: 30px;
   line-height: 36px;
@@ -91,6 +107,11 @@ a {
   text-align: center;
   vertical-align: middle;
 }
+
+.find-hotels__description {
+  font-weight: 400;
+}
+
 .find-hotels__button {
   font: inherit;
   background-color: #766357;
@@ -99,11 +120,23 @@ a {
   line-height: 26px;
   font-weight: 400;
   text-transform: uppercase;
+  border: none;
+}
+
+.find-hotels__button:hover {
+  background-color: #604e44;
+}
+
+.find-hotels__button:active {
+  background-color: #503e34;
+  color: #766357;
+  outline: none;
 }
 
 .find-hotels__description{
   text-align: center;
 }
+
 .popup__btn {
   background-color: #81b3d2;
   color: #ffffff;
@@ -111,31 +144,86 @@ a {
   text-align: center;
   vertical-align: middle;
 }
+
+.popup__btn:hover {
+  background-color: #669ec1;
+}
+
+.popup__btn:active {
+  background-color: #5596be;
+  color: #88b6d0;
+  outline: none;
+}
+
 .main-page__map p {
     background-color: #ffffff;
+}
+
+.popup__field {
+  background-color: #f2f2f2;
+  border: none;
+}
+
+.popup__field::-input-placeholder {
+  color: #000000;
+}
+
+.popup__field:hover {
+  background-color: #ebebeb;
+  border: none;
+}
+
+.popup__field:active {
+  background-color: #ffffff;
+  border: 1px solid #ebebeb;
+  outline: none;
 }
 /*-------------------------------Catalog-------------------------------*/
 .results-center__sort {
   list-style: none;
 }
+
 .main-page__filters {
     color: #ffffff;
     background-color: #455258;
 }
+
 .search__results-left {
   font-size: 21px;
   line-height: 26px;
 }
+
 .search__results-center span,
-.search__results-center a{
+.search__results-center a {
   font-size: 12px;
   line-height: 18px;
   color: #000000;
 }
+
+.results-center__sort a {
+  color:#a9a9a9;
+  border-bottom: 1px dotted #81b3d2;
+}
+
+.results-center__sort a:hover {
+  color: #81b3d2;
+}
+
+.results-center__sort a:focus {
+  color: #81b3d2;
+  border-bottom: none;
+}
+
+.results-center__sort a:active {
+  color: #000000;
+  border-bottom: none;
+}
+
 .filters__title {
   font-size: 16px;
   line-height: 21px;
 }
+
 .type,
 .price,
 .rating-nubmers,
@@ -163,14 +251,50 @@ a {
   background-color: #81b3d2;
 }
 
+.btn__more-info:hover {
+  background-color: #5f9ec5;
+}
+
+.btn__more-info:active {
+  background-color: #5f9ec5;
+  color:#81b3d2;
+}
+
 .btn__book-it  {
   background-color: #766357;
+}
+
+.btn__book-it:hover {
+  background-color: #5f4b3e;
+}
+
+.btn__book-it:active {
+  background-color: #5f4b3e;
+  color:#766357;
+}
+
+.form-button {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-decoration: none;
+  background: none;
+  border: 2px solid #ffffff;
+  outline: none;
+}
+
+.form-button:hover {
+  background: #ffffff;
+  color: #000000;
 }
 
 .link-title:hover,
 .link-title:focus {
   color: #81b3d2;
 }
+
 .link-title:active {
   color: #929292;
 }
@@ -178,4 +302,77 @@ a {
 /*-------------------------------Footer-------------------------------*/
 .social__items {
   list-style: none;
+}
+
+.main-footer__hash {
+  display: inline-block;
+  font-weight: bold;
+  vertical-align: middle;
+  text-align: center;
+  color: black;
+  text-decoration: none;
+}
+
+.social__items {
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.social__items .social__item {
+  display: inline-block;
+  width: 46px;
+  height: 48px;
+  font-size: 20px;
+  vertical-align: middle;
+  color: white;
+  text-decoration: none;
+  background: #81b3d2;
+}
+
+.main-footer__copyright {
+  font-size: 14px;
+  vertical-align: middle;
+  text-align: center;
+  color: black;
+}
+
+.social__items .social__item--tw {
+  background-image: url("../img/twitter.svg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+.social__items .social__item--fb {
+  background-image: url("../img/fb-icon.svg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+.social__items .social__item--yt {
+  background-image: url("../img/youtube.svg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+.social__items .social__item:hover {
+  background-color: #669ec1;
+
+}
+
+.social__items .social__item:active {
+  color: #89b7d1;
+  background-color: #5596be;
+}
+
+.main-footer__copyright a {
+
+}
+
+.main-footer__copyright a:hover {
+
+}
+
+.main-footer__copyright a:active {
+
 }
