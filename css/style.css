@@ -71,13 +71,13 @@ header {
 }
 
 .welcome__image {
-position: absolute;
-top: 72px;
-left: 371px;
-width: 458px;
-height: 352px;
-margin-right: auto;
-margin-left: auto;
+  position: absolute;
+  top: 72px;
+  left: 371px;
+  width: 458px;
+  height: 352px;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .nav__list {
@@ -154,6 +154,7 @@ margin-left: auto;
   font-family: 'PT Sans', Arial, sans-serif;
   display: block;
   margin: 0 auto;
+  margin-top: -212px;
   margin-bottom: 30px;
   padding: 0;
   width: 440px;
@@ -171,18 +172,15 @@ margin-left: auto;
   font-weight: 400;
 }
 
-.main-page__header::before {
-  content: "";
-  display: block;
+.main-page__header img {
   width: 1200px;
-  height: 508px;
+  height: 780px;
   background-color: #81b3d2;
-  background-image: url("../img/main-photo.jpg");
-  background-size: auto auto;
-  background-position: 0px -55px;
+  background-position: 0px -105px;
   background-repeat: no-repeat;
   margin: 0 auto;
-  margin-bottom: 60px;
+  margin-top: -55px;
+  margin-bottom: 50px;
 }
 
 .advantages-list {
@@ -519,7 +517,7 @@ margin-left: auto;
   padding: 0;
 }
 
-.wraper {
+.popup__group-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -540,7 +538,7 @@ margin-left: auto;
   width: 226px;
 }
 
-.wraper:last-child {
+.popup__group-wrapper:last-child {
   max-width: 179px;
   padding-left: 50px;
 }
@@ -1181,7 +1179,7 @@ fieldset {
   border-bottom: 1px solid #cacaca;
 }
 
-.hotel-wraper {
+.hotel-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1317,24 +1315,23 @@ fieldset {
 }
 
 .btn__book-it {
-  display: inline-block;
-  padding-top: 3px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
   font-size: 14px;
   line-height: 21px;
   color: white;
   background-color: #766357;
   border: 0px;
+  text-decoration: none;
   width: 142px;
-  text-transform: uppercase;
-  font-family: "PT Sans","Arial", sans-serif;
-  font-weight: 800; 
-  color: #fff;
-  background-color: #766357;
   height: 27px;
-  min-height: 27px;
-  cursor: pointer;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-align: center;
+  display: block;
+  padding-top: 4px;
+  padding-bottom: 3px;
+  font-family: "PT Sans","Arial", sans-serif;
+  font-weight: 800;
+  text-transform: uppercase;
 }
 
 .btn__book-it:hover {
@@ -1423,7 +1420,7 @@ fieldset {
   max-width: 1200px;
 }
 
-.footer-wraper {
+.footer-wrapper {
   bottom: 0;
   left: 0;
   display: -webkit-box;
@@ -1485,7 +1482,7 @@ fieldset {
   color: #000000;
 }
 
-.social__item {
+.social__link {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1500,11 +1497,11 @@ fieldset {
   background-color: #81b3d2;
 }
 
-.social__item:hover {
+.social__link:hover {
   background-color: #669ec1;
 }
 
-.social__item:active {
+.social__link:active {
   color: #89b7d1;
   background-color: #5596be;
 }
