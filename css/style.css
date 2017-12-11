@@ -65,6 +65,7 @@ header {
   position: absolute;
   top: 0;
   left: calc(50% - 69px);
+  z-index: 5;
 }
 
 .main-header__welcome {
@@ -161,31 +162,48 @@ header {
 
 /*-------------------------------!!!Main-page!!!-------------------------------*/
 
-.main-page__header {
+.main-page__header-img {
+  width: 100%;
   text-align: center;
-  padding-bottom: 50px;
-  background-color: #ffffff;
+  padding: 76px 0;
+  padding-bottom: 73px;
+  position: relative;
+  background-image: url("../img/background-photo.jpg");
+  background-repeat: no-repeat;
+  background-color: #2a404e;
+  z-index: 1;
+  background-position-x: 50%;
+  background-position-y: -58px;
 }
 
-.main-page__header::after {
+.main-page__header-img::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+      -webkit-transform: translateX(-50%);
+          -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+  width: 100%;
+  height: 57px;
+  background-image: url("../img/figure.png");
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: contain;
+}
+
+.main-page__header {
+  width: 500px;
+  margin: 0 auto;
+  padding: 45px 20px 38px;
   text-align: center;
-  padding-bottom: 50px;
-  background-color: #ffffff;
 }
 
 .header__title {
-  font-family: 'PT Sans', 'Arial', sans-serif;
-  display: block;
-  margin: 0 auto;
-  margin-top: -212px;
-  margin-bottom: 30px;
-  padding: 0;
-  width: 440px;
   font-size: 21px;
   line-height: 26px;
-  font-weight: 700;
-  color: #000000;
-  letter-spacing: normal;
+  line-height: 25px;
+  margin-bottom: 30px;
 }
 
 .header__discription {
@@ -197,17 +215,7 @@ header {
   color: #333333;
   font-weight: normal;
   letter-spacing: .1px;
-}
-
-.main-page__header img {
-  width: 100%;
-  height: 780px;
-  background-color: #81b3d2;
-  background-position: 0px -105px;
-  background-repeat: no-repeat;
-  margin: 0 auto;
-  margin-top: -55px;
-  margin-bottom: 50px;
+  margin-bottom: 14px;
 }
 
 .advantages-list {
