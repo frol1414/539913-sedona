@@ -249,7 +249,7 @@ header {
 }
 
 .advantage-item {
-  width: 33%;
+  width: 33.3%;
   min-height: 256px;
   text-align: center;
 }
@@ -265,8 +265,10 @@ header {
 }
 
 .advantage-item__wrapper {
-  width: 33%;
+  width: 33.3%;
   padding-top: 2px;
+  text-align: center;
+  line-height: 21px;
 }
 
 .advantage-item__wrapper h3 {
@@ -375,6 +377,7 @@ header {
   margin: 0 auto;
   margin-bottom: 20px;
   padding: 0 auto;
+  padding-top: 2px;
   max-width: 286px;
   letter-spacing: normal;
   color: #333333;
@@ -388,12 +391,11 @@ header {
 }
 
 .advantage-item__next-numbers p {
-  max-width: 286px;
-  font-family: 'PT Sans', 'Arial', sans-serif;
-  font-size: 14px;
-  line-height: 20px;
-  font-weight: normal;
-  letter-spacing: normal;
+  width: 68%;
+  padding-bottom: 28px;
+  margin: 0 auto;
+  margin-right: 16%;
+  line-height: 21px;
 }
 
 .advantage-item__one {
@@ -402,10 +404,11 @@ header {
 
 .advantage-item__two {
   background-color: #81b3d2;
+  margin-bottom: 3px;
 }
 
 .advantage-advice .advantage-item {
-  width: 33%;
+  width: 33.3%;
   min-height: 330px;
   background-color: #ffffff;
 }
@@ -448,9 +451,10 @@ header {
 }
 
 .find-hotels__wrapper {
+  width: 100%;
   margin: 0;
   padding: 0;
-  padding-top: 50px;
+  padding-top: 48px;
   position: relative;
   z-index: 2;
   text-align: center;
@@ -467,7 +471,9 @@ header {
 }
 
 .find-hotels__description {
-  margin: 25px auto 45px;
+  margin: 0 auto;
+  margin-top: 24px;
+  margin-bottom: 47px;
   padding: 0;
   width: 440px;
   line-height: 24px;
